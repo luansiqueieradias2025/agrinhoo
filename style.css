@@ -1,0 +1,140 @@
+:root {
+    --verde-agro: #2e7d32; /* Verde escuro */
+    --verde-claro: #81c784; /* Verde folha */
+    --terra: #795548; /* Marrom terra */
+    --fundo: #f1f8e9; /* Fundo levemente esverdeado */
+    --texto: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, var(--verde-agro), var(--verde-claro));
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--terra);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.intro h2 {
+    color: var(--verde-agro);
+    margin-bottom: 1rem;
+}
+
+/* Secção Interativa */
+.pilares {
+    text-align: center;
+}
+
+.pilares h2 {
+    color: var(--terra);
+    margin-bottom: 0.5rem;
+}
+
+.instrucao {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-top: 4px solid var(--verde-agro);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: var(--verde-agro);
+    margin-bottom: 1rem;
+}
+
+.icone {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Classe para esconder/mostrar conteúdo com JS */
+.info {
+    display: none;
+    font-size: 0.95rem;
+    color: #555;
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.info.visivel {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--terra);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

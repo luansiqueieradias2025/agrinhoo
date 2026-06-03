@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Regenerativa</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agricultura Regenerativa</h1>
+        <p>O Futuro da Produtividade de Alto Impacto Positivo</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>O que é o Agro Regenerativo?</h2>
+            <p>Mais do que sustentar, o objetivo é <strong>regenerar</strong>. A agricultura regenerativa busca ativamente recuperar solos degradados, aumentar a biodiversidade e otimizar o ciclo da água. O resultado é um agronegócio mais forte, resiliente às mudanças climáticas e capaz de entregar alta produtividade em total harmonia com o meio ambiente.</p>
+        </section>
+
+        <section class="pilares">
+            <h2>Os 3 Pilares da Regeneração</h2>
+            <p class="instrucao">Clica nos cards abaixo para descobrir como a prática funciona no campo.</p>
+            
+            <div class="cards-container">
+                <div class="card" onclick="toggleInfo('solo')">
+                    <div class="icone">🌱</div>
+                    <h3>Saúde do Solo</h3>
+                    <p>O coração do sistema agrícola.</p>
+                    <div id="info-solo" class="info">
+                        <strong>Práticas:</strong> Plantio direto, uso de plantas de cobertura e rotação de culturas.<br><br>
+                        <strong>Impacto:</strong> Aumenta a matéria orgânica, sequestra carbono da atmosfera e reduz drasticamente a necessidade de fertilizantes químicos.
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleInfo('biodiversidade')">
+                    <div class="icone">🐝</div>
+                    <h3>Biodiversidade</h3>
+                    <p>A força da natureza a trabalhar em conjunto.</p>
+                    <div id="info-biodiversidade" class="info">
+                        <strong>Práticas:</strong> Sistemas de Integração Lavoura-Pecuária-Floresta (ILPF) e conservação de polinizadores.<br><br>
+                        <strong>Impacto:</strong> Cria um ecossistema equilibrado, controlando pragas de forma natural e gerando múltiplas fontes de renda para o produtor.
+                    </div>
+                </div>
+
+                <div class="card" onclick="toggleInfo('agua')">
+                    <div class="icone">💧</div>
+                    <h3>Ciclo da Água</h3>
+                    <p>Retenção inteligente de recursos.</p>
+                    <div id="info-agua" class="info">
+                        <strong>Práticas:</strong> Curvas de nível, bacias de captação e manutenção da cobertura vegetal constante.<br><br>
+                        <strong>Impacto:</strong> Aumenta a infiltração da água da chuva no solo, recarrega os lençóis freáticos e previne a erosão do terreno.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Código criado como exemplo didático.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
